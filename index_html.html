@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><base href="https://d16ilfvy4mv02r.cloudfront.net/workspaces/5VnglJvhwdjxw8XtRKcocBS0QNiTJQsh/9777431f-3446-4c79-9182-6dd2d4a88e3b/files/">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>França &amp; Miranda Advogados Associados</title>
+  <meta name="description" content="Escritório de advocacia França &amp; Miranda — Excelência jurídica desde 1998. Especialistas em Direito Empresarial, Família, Trabalhista e mais." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="França &amp; Miranda Advogados Associados" />
+  <meta property="og:description" content="Soluções jurídicas estratégicas e personalizadas desde 1998." />
+  <meta property="og:type" content="website" />
+  <!-- Tailwind CDN (Play CDN — config definido logo abaixo) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            oliva: {
+              50:'#f4f5f0',100:'#e6e8dc',200:'#cfd3b8',300:'#b0b78e',
+              400:'#939a6d',500:'#767e52',600:'#5c6340',700:'#4a4f35',
+              800:'#3d412d',900:'#343828'
+            },
+            dourado: {
+              50:'#fbf8f1',100:'#f5eedc',200:'#ead9b8',300:'#dec08a',
+              400:'#d4af37',500:'#c68a3d',600:'#b87030',700:'#985628',
+              800:'#7d4626',900:'#653a22'
+            },
+            menta: { 400:'#34d399',500:'#10b981',600:'#059669' }
+          },
+          fontFamily: {
+            display: ['Cinzel','serif'],
+            serif:   ['Playfair Display','serif'],
+            sans:    ['Lato','sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* ── Reset & base ─────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { overflow-x: hidden; }
+
+    /* ── Tipografia decorativa ────────────────────────────── */
+    .gold-gradient {
+      background: linear-gradient(135deg,#d4af37 0%,#f4e5c2 50%,#d4af37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .text-shadow { text-shadow: 2px 2px 8px rgba(0,0,0,.7); }
+
+    /* ── Hero background ──────────────────────────────────── */
+    .hero-bg {
+      background-image:
+        linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),
+        url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    @media(max-width:768px){ .hero-bg{ background-attachment: scroll; } }
+
+    /* ── Navbar ───────────────────────────────────────────── */
+    #navbar { transition: background .3s, padding .3s, box-shadow .3s; }
+    #navbar.scrolled {
+      background: rgba(6,6,6,.97) !important;
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 24px rgba(0,0,0,.5);
+      padding-top: .65rem;
+      padding-bottom: .65rem;
+    }
+
+    /* ── Mobile drawer ────────────────────────────────────── */
+    #mobile-drawer {
+      transform: translateX(100%);
+      transition: transform .35s cubic-bezier(.4,0,.2,1);
+    }
+    #mobile-drawer.open { transform: translateX(0); }
+    /* overlay: começa oculto, JS alterna .show */
+    #mobile-overlay { display:none; }
+    #mobile-overlay.show { display:block; }
+
+    /* ── Botão dourado ────────────────────────────────────── */
+    .btn-gold {
+      background: linear-gradient(135deg,#d4af37 0%,#b8960f 100%);
+      transition: background .3s, transform .3s, box-shadow .3s;
+      display: inline-block;
+    }
+    .btn-gold:hover {
+      background: linear-gradient(135deg,#e5c048 0%,#d4af37 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(212,175,55,.35);
+    }
+
+    /* ── Cards ────────────────────────────────────────────── */
+    .card-hover { transition: transform .4s cubic-bezier(.4,0,.2,1), box-shadow .4s; }
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(212,175,55,.18);
+    }
+
+    .area-card {
+      background: linear-gradient(145deg,rgba(30,30,20,.9),rgba(10,10,10,.98));
+      border: 1px solid rgba(212,175,55,.12);
+      transition: border-color .4s, transform .4s, box-shadow .4s;
+      position: relative; overflow: hidden;
+    }
+    .area-card::before {
+      content:''; position:absolute; inset:0;
+      background: linear-gradient(135deg,rgba(212,175,55,.06) 0%,transparent 60%);
+      opacity:0; transition: opacity .4s;
+    }
+    .area-card:hover { border-color:rgba(212,175,55,.5); transform:translateY(-6px); }
+    .area-card:hover::before { opacity:1; }
+    .area-card:hover .area-icon { background:rgba(212,175,55,.2); color:#d4af37; }
+
+    .area-icon {
+      width:64px; height:64px;
+      background:rgba(212,175,55,.08);
+      border-radius:12px;
+      display:flex; align-items:center; justify-content:center;
+      font-size:1.75rem; color:rgba(212,175,55,.7);
+      transition: background .4s, color .4s;
+      margin-bottom:1.25rem;
+    }
+
+    .partner-card {
+      background:linear-gradient(145deg,rgba(52,56,40,.85),rgba(10,10,10,.97));
+      border:1px solid rgba(212,175,55,.18);
+      transition: border-color .4s, box-shadow .4s;
+    }
+    .partner-card:hover {
+      border-color:rgba(212,175,55,.55);
+      box-shadow:0 25px 50px -12px rgba(212,175,55,.22);
+    }
+
+    .blog-card {
+      background:rgba(15,15,10,.95);
+      border:1px solid rgba(212,175,55,.1);
+      transition: border-color .4s, transform .4s;
+      overflow:hidden;
+    }
+    .blog-card:hover { border-color:rgba(212,175,55,.4); transform:translateY(-6px); }
+    .blog-card:hover .blog-img { transform:scale(1.06); }
+    .blog-img { transition:transform .6s ease; }
+
+    .testimonial-card {
+      background:linear-gradient(135deg,rgba(30,30,20,.9),rgba(10,10,8,.98));
+      border:1px solid rgba(212,175,55,.15);
+      transition: border-color .4s, transform .4s;
+    }
+    .testimonial-card:hover { border-color:rgba(212,175,55,.4); transform:translateY(-6px); }
+
+    /* ── Animações de entrada ─────────────────────────────── */
+    .reveal { opacity:0; transform:translateY(32px); transition:opacity .8s ease, transform .8s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal.d1 { transition-delay:.12s; }
+    .reveal.d2 { transition-delay:.24s; }
+    .reveal.d3 { transition-delay:.36s; }
+    .reveal.d4 { transition-delay:.48s; }
+
+    /* ── Divisor dourado ──────────────────────────────────── */
+    .divider {
+      height:1px;
+      background:linear-gradient(to right,transparent,#d4af37,transparent);
+    }
+
+    /* ── Progress bars ────────────────────────────────────── */
+    .prog-track { height:4px; background:rgba(212,175,55,.15); border-radius:2px; overflow:hidden; }
+    .prog-fill  { height:100%; border-radius:2px; background:linear-gradient(to right,#d4af37,#f4e5c2); width:0; transition:width 1.5s ease; }
+
+    /* ── Blog tabs ────────────────────────────────────────── */
+    .tab-btn { transition:color .3s, border-color .3s; border-bottom:2px solid transparent; }
+    .tab-btn.active { color:#d4af37; border-color:#d4af37; }
+
+    /* ── Formulário ───────────────────────────────────────── */
+    .fm-input {
+      background:rgba(255,255,255,.04);
+      border:1px solid rgba(212,175,55,.2);
+      color:#e5e7eb;
+      width:100%; padding:.875rem 1rem;
+      border-radius:4px; outline:none;
+      font-family:'Lato',sans-serif;
+      transition:border-color .3s, background .3s, box-shadow .3s;
+    }
+    .fm-input:focus {
+      border-color:rgba(212,175,55,.7);
+      background:rgba(255,255,255,.07);
+      box-shadow:0 0 0 3px rgba(212,175,55,.08);
+    }
+    .fm-input::placeholder { color:#6b7280; }
+    .fm-input option { background:#111; }
+
+    /* ── Overlay imagem ───────────────────────────────────── */
+    .img-overlay {
+      background:linear-gradient(to top,rgba(0,0,0,.9) 0%,rgba(0,0,0,.35) 50%,transparent 100%);
+    }
+
+    /* ── Scroll-to-top ────────────────────────────────────── */
+    #scroll-top { opacity:0; pointer-events:none; transition:opacity .3s; }
+    #scroll-top.show { opacity:1; pointer-events:auto; }
+
+    /* ── WhatsApp flutuante ───────────────────────────────── */
+    .wa-btn {
+      position:fixed; bottom:24px; right:24px; z-index:999;
+      width:56px; height:56px; border-radius:50%;
+      background:#25D366; color:#fff;
+      display:flex; align-items:center; justify-content:center;
+      font-size:1.6rem; text-decoration:none;
+      box-shadow:0 6px 20px rgba(37,211,102,.4);
+      transition:transform .3s, box-shadow .3s;
+    }
+    .wa-btn:hover { transform:scale(1.12); box-shadow:0 10px 28px rgba(37,211,102,.55); }
+
+    /* ── Scrollbar ────────────────────────────────────────── */
+    ::-webkit-scrollbar { width:6px; }
+    ::-webkit-scrollbar-track { background:#0a0a0a; }
+    ::-webkit-scrollbar-thumb { background:#d4af37; border-radius:3px; }
+    ::-webkit-scrollbar-thumb:hover { background:#e5c048; }
+
+    /* ── Fade-in-down (hero) ──────────────────────────────── */
+    @keyframes fadeInDown {
+      from { opacity:0; transform:translateY(-22px); }
+      to   { opacity:1; transform:translateY(0); }
+    }
+    .fid { animation:fadeInDown .7s ease both; }
+
+    /* ── Nav link underline ───────────────────────────────── */
+    .nav-link { position:relative; }
+    .nav-link::after {
+      content:''; position:absolute; bottom:-4px; left:0; width:0; height:1px;
+      background:#d4af37; transition:width .3s;
+    }
+    .nav-link:hover::after,
+    .nav-link.active::after { width:100%; }
+  </style>
+</head>
+<body class="font-sans text-gray-100 bg-black">
+
+<!-- ════════════════════════════════════════════════════
+     NAVBAR
+═════════════════════════════════════════════════════ -->
+<nav id="navbar" class="fixed w-full z-50 py-5">
+  <div class="container mx-auto px-6">
+    <div class="flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="#home" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 border-2 border-dourado-400 rounded-full flex items-center justify-center bg-black/60 group-hover:border-dourado-300 transition-colors">
+          <span class="font-display text-dourado-400 text-base font-bold leading-none">F&amp;M</span>
+        </div>
+        <div class="hidden md:block">
+          <p class="font-display text-dourado-400 text-base font-bold tracking-widest leading-tight">FRANÇA &amp; MIRANDA</p>
+          <p class="text-xs text-gray-500 tracking-[.2em] uppercase">Advogados Associados</p>
+        </div>
+      </a>
+
+      <!-- Desktop links -->
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="#home"    class="nav-link text-gray-300 hover:text-dourado-400 text-sm font-medium tracking-wide uppercase transition-colors">Home</a>
+        <a href="#sobre"   class="nav-link text-gray-300 hover:text-dourado-400 text-sm font-medium tracking-wide uppercase transition-colors">Sobre</a>
+        <a href="#areas"   class="nav-link text-gray-300 hover:text-dourado-400 text-sm font-medium tracking-wide uppercase transition-colors">Áreas</a>
+        <a href="#socios"  class="nav-link text-gray-300 hover:text-dourado-400 text-sm font-medium tracking-wide uppercase transition-colors">Sócios</a>
+        <a href="#blog"    class="nav-link text-gray-300 hover:text-dourado-400 text-sm font-medium tracking-wide uppercase transition-colors">Blog</a>
+        <a href="#contato" class="btn-gold text-black px-6 py-2.5 rounded-sm font-bold tracking-wide text-sm uppercase">Contato</a>
+      </div>
+
+      <!-- Hamburger -->
+      <button id="hamburger" class="lg:hidden text-dourado-400 text-2xl focus:outline-none" aria-label="Abrir menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile overlay (JS gerencia display) -->
+  <div id="mobile-overlay" class="fixed inset-0 bg-black/60 z-40 lg:hidden"></div>
+
+  <!-- Mobile drawer -->
+  <div id="mobile-drawer" class="fixed top-0 right-0 w-80 h-full bg-black/98 z-50 p-8 lg:hidden border-l border-dourado-400/20"
+       style="-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);">
+    <button id="close-drawer" class="absolute top-5 right-5 text-dourado-400 text-2xl focus:outline-none" aria-label="Fechar menu">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="mt-14 mb-8">
+      <p class="font-display text-dourado-400 text-lg font-bold tracking-widest">FRANÇA &amp; MIRANDA</p>
+      <p class="text-xs text-gray-500 tracking-widest uppercase mt-1">Advogados Associados</p>
+    </div>
+    <nav class="flex flex-col gap-5">
+      <a href="#home"    class="drawer-link font-display text-lg text-gray-300 hover:text-dourado-400 border-b border-gray-800 pb-3 transition-colors">Home</a>
+      <a href="#sobre"   class="drawer-link font-display text-lg text-gray-300 hover:text-dourado-400 border-b border-gray-800 pb-3 transition-colors">Sobre</a>
+      <a href="#areas"   class="drawer-link font-display text-lg text-gray-300 hover:text-dourado-400 border-b border-gray-800 pb-3 transition-colors">Áreas de Atuação</a>
+      <a href="#socios"  class="drawer-link font-display text-lg text-gray-300 hover:text-dourado-400 border-b border-gray-800 pb-3 transition-colors">Sócios</a>
+      <a href="#blog"    class="drawer-link font-display text-lg text-gray-300 hover:text-dourado-400 border-b border-gray-800 pb-3 transition-colors">Blog Jurídico</a>
+      <a href="#contato" class="btn-gold text-black px-6 py-3 rounded-sm font-bold tracking-wide uppercase text-sm text-center">Fale Conosco</a>
+    </nav>
+    <div class="mt-10 pt-6 border-t border-gray-800">
+      <p class="text-gray-500 text-xs uppercase tracking-widest mb-4">Redes Sociais</p>
+      <div class="flex gap-4">
+        <a href="#" aria-label="LinkedIn"  class="text-dourado-400 hover:text-white text-xl transition-colors"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Instagram" class="text-dourado-400 hover:text-white text-xl transition-colors"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"  class="text-dourado-400 hover:text-white text-xl transition-colors"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="YouTube"   class="text-dourado-400 hover:text-white text-xl transition-colors"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════════════════
+     HERO
+═════════════════════════════════════════════════════ -->
+<section id="home" class="hero-bg min-h-screen flex items-center justify-center relative">
+  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black pointer-events-none"></div>
+  <div class="container mx-auto px-6 relative z-10 text-center pt-24 pb-16">
+    <div class="max-w-5xl mx-auto">
+      <!-- Eyebrow -->
+      <div class="mb-8 inline-block fid">
+        <div class="divider w-32 mx-auto mb-5 opacity-60"></div>
+        <span class="text-dourado-400 tracking-[.35em] uppercase text-xs font-bold">Excelência Jurídica desde 1998</span>
+        <div class="divider w-32 mx-auto mt-5 opacity-60"></div>
+      </div>
+
+      <!-- Título -->
+      <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight text-shadow fid" style="animation-delay:.15s">
+        Defendendo seus<br><span class="gold-gradient">direitos com excelência</span>
+      </h1>
+
+      <p class="text-gray-300 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light leading-relaxed fid" style="animation-delay:.3s">
+        Soluções jurídicas estratégicas e personalizadas para proteger seus interesses — com a tradição e a inovação que só a França &amp; Miranda oferece.
+      </p>
+
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center fid" style="animation-delay:.45s">
+        <a href="#contato" class="btn-gold text-black px-10 py-4 rounded-sm font-bold tracking-wide uppercase text-sm">
+          <i class="fas fa-calendar-check mr-2"></i>Agende uma Consulta
+        </a>
+        <a href="#sobre" class="border-2 border-dourado-400 text-dourado-400 px-10 py-4 rounded-sm font-bold tracking-wide uppercase text-sm hover:bg-dourado-400 hover:text-black transition-all">
+          <i class="fas fa-book-open mr-2"></i>Conheça Nossa História
+        </a>
+      </div>
+
+      <!-- Trust badges -->
+      <div class="mt-16 flex flex-wrap justify-center gap-8 fid" style="animation-delay:.6s">
+        <span class="flex items-center gap-2 text-gray-400 text-sm"><i class="fas fa-shield-alt text-dourado-400"></i>OAB/SP Registrado</span>
+        <span class="flex items-center gap-2 text-gray-400 text-sm"><i class="fas fa-award text-dourado-400"></i>Top 100 Advogados Brasil</span>
+        <span class="flex items-center gap-2 text-gray-400 text-sm"><i class="fas fa-star text-dourado-400"></i>ISO 9001 Certificado</span>
+        <span class="flex items-center gap-2 text-gray-400 text-sm"><i class="fas fa-globe text-dourado-400"></i>Atuação Nacional</span>
+      </div>
+    </div>
+  </div>
+  <!-- Scroll down -->
+  <a href="#stats" class="absolute bottom-8 left-1/2 -translate-x-1/2 text-dourado-400 text-2xl animate-bounce opacity-80 hover:opacity-100 transition-opacity">
+    <i class="fas fa-chevron-down"></i>
+  </a>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     STATS
+═════════════════════════════════════════════════════ -->
+<section id="stats" class="bg-oliva-900 border-y border-oliva-800 py-14">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div class="reveal">
+        <div class="text-5xl font-display font-bold text-dourado-400 mb-2 counter" data-target="25" data-suffix="+">0+</div>
+        <div class="text-xs text-gray-400 uppercase tracking-wider">Anos de Experiência</div>
+      </div>
+      <div class="reveal d1">
+        <div class="text-5xl font-display font-bold text-dourado-400 mb-2 counter" data-target="5000" data-suffix="+">0+</div>
+        <div class="text-xs text-gray-400 uppercase tracking-wider">Casos Atendidos</div>
+      </div>
+      <div class="reveal d2">
+        <div class="text-5xl font-display font-bold text-dourado-400 mb-2 counter" data-target="98" data-suffix="%">0%</div>
+        <div class="text-xs text-gray-400 uppercase tracking-wider">Taxa de Sucesso</div>
+      </div>
+      <div class="reveal d3">
+        <!-- FIX: data-suffix="" para não adicionar "+" ao número 15 -->
+        <div class="text-5xl font-display font-bold text-dourado-400 mb-2 counter" data-target="15" data-suffix="">0</div>
+        <div class="text-xs text-gray-400 uppercase tracking-wider">Advogados Especializados</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     SOBRE
+═════════════════════════════════════════════════════ -->
+<section id="sobre" class="bg-black py-28 relative overflow-hidden">
+  <div class="absolute top-0 right-0 w-1/3 h-full bg-oliva-900/15 -skew-x-12 translate-x-16 pointer-events-none"></div>
+  <div class="container mx-auto px-6 relative z-10">
+
+    <!-- História -->
+    <div class="grid lg:grid-cols-2 gap-16 items-center mb-28">
+      <div class="reveal">
+        <span class="text-dourado-400 tracking-[.25em] uppercase text-xs font-bold mb-4 block">Sobre Nós</span>
+        <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+          Tradição e <span class="text-menta-500">Inovação</span> no Direito
+        </h2>
+        <div class="w-24 h-0.5 bg-gradient-to-r from-dourado-400 to-transparent mb-8"></div>
+        <p class="text-gray-400 mb-6 leading-relaxed text-lg">
+          Fundado em 1998 pelos sócios <strong class="text-white">Dra. Gisele França</strong> e <strong class="text-white">Dr. Gabriel Miranda</strong>, nosso escritório nasceu da união de duas mentes brilhantes do direito brasileiro, comprometidas com a excelência e a defesa incansável dos direitos de nossos clientes.
+        </p>
+        <p class="text-gray-400 mb-8 leading-relaxed">
+          Ao longo de mais de duas décadas, consolidamos nossa reputação como um dos escritórios mais respeitados do país, combinando tradição jurídica com abordagens inovadoras para oferecer soluções efetivas nas mais complexas demandas legais.
+        </p>
+
+        <!-- Progress bars -->
+        <div class="space-y-5 mb-8">
+          <div>
+            <div class="flex justify-between text-sm mb-2"><span class="text-gray-300">Direito Empresarial</span><span class="text-dourado-400 font-bold">95%</span></div>
+            <div class="prog-track"><div class="prog-fill" data-w="95"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm mb-2"><span class="text-gray-300">Direito de Família</span><span class="text-dourado-400 font-bold">92%</span></div>
+            <div class="prog-track"><div class="prog-fill" data-w="92"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm mb-2"><span class="text-gray-300">Direito Trabalhista</span><span class="text-dourado-400 font-bold">90%</span></div>
+            <div class="prog-track"><div class="prog-fill" data-w="90"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm mb-2"><span class="text-gray-300">Direito Tributário</span><span class="text-dourado-400 font-bold">88%</span></div>
+            <div class="prog-track"><div class="prog-fill" data-w="88"></div></div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mb-8 text-sm">
+          <div class="flex items-start gap-2"><i class="fas fa-check-circle text-menta-500 mt-0.5"></i><span class="text-gray-300">Atuação Nacional</span></div>
+          <div class="flex items-start gap-2"><i class="fas fa-check-circle text-menta-500 mt-0.5"></i><span class="text-gray-300">Equipe Multidisciplinar</span></div>
+          <div class="flex items-start gap-2"><i class="fas fa-check-circle text-menta-500 mt-0.5"></i><span class="text-gray-300">Assessoria 24/7</span></div>
+          <div class="flex items-start gap-2"><i class="fas fa-check-circle text-menta-500 mt-0.5"></i><span class="text-gray-300">Sigilo Garantido</span></div>
+          <div class="flex items-start gap-2"><i class="fas fa-check-circle text-menta-500 mt-0.5"></i><span class="text-gray-300">Tecnologia Jurídica</span></div>
+          <div class="flex items-start gap-2"><i class="fas fa-check-circle text-menta-500 mt-0.5"></i><span class="text-gray-300">Honorários Transparentes</span></div>
+        </div>
+
+        <a href="#contato" class="btn-gold text-black px-8 py-3.5 rounded-sm font-bold tracking-wide uppercase text-sm">
+          Fale com um Advogado
+        </a>
+      </div>
+
+      <!-- Foto + citação -->
+      <div class="reveal d2 relative">
+        <div class="relative rounded-sm overflow-hidden shadow-2xl">
+          <img src="https://images.unsplash.com/photo-1575505586569-646b2ca898fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+               alt="Escritório França &amp; Miranda"
+               class="w-full h-96 lg:h-[520px] object-cover" />
+          <div class="img-overlay absolute inset-0"></div>
+          <div class="absolute bottom-6 left-6 right-6">
+            <div class="bg-black/70 border border-dourado-400/30 rounded-sm p-5" style="-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);">
+              <div class="flex items-start gap-3">
+                <i class="fas fa-quote-left text-dourado-400 text-2xl flex-shrink-0 mt-1"></i>
+                <p class="text-gray-200 text-sm italic leading-relaxed">
+                  "Nosso compromisso é tratar cada caso com a dedicação e o rigor que você merece."
+                </p>
+              </div>
+              <p class="text-right text-dourado-400 text-xs font-bold mt-3">— Dra. Gisele França</p>
+            </div>
+          </div>
+        </div>
+        <!-- Badge flutuante -->
+        <div class="absolute -top-6 -left-6 bg-dourado-400 text-black rounded-full w-28 h-28 items-center justify-center flex-col shadow-xl hidden md:flex">
+          <span class="font-display font-bold text-2xl leading-none">25+</span>
+          <span class="text-xs font-bold uppercase text-center leading-tight mt-1">Anos de<br>Excelência</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Valores -->
+    <div>
+      <div class="text-center mb-14 reveal">
+        <span class="text-dourado-400 tracking-[.25em] uppercase text-xs font-bold mb-3 block">Nossa Fundação</span>
+        <h3 class="font-display text-3xl md:text-4xl font-bold text-white mb-4">Princípios que nos guiam</h3>
+        <div class="divider w-40 mx-auto"></div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="reveal text-center p-8 border border-dourado-400/10 rounded-sm hover:border-dourado-400/30 transition-colors">
+          <div class="w-16 h-16 mx-auto mb-6 bg-dourado-400/10 rounded-full flex items-center justify-center">
+            <i class="fas fa-balance-scale text-dourado-400 text-2xl"></i>
+          </div>
+          <h4 class="font-display text-xl text-white mb-3">Ética &amp; Integridade</h4>
+          <p class="text-gray-400 text-sm leading-relaxed">Pautados pelos mais altos padrões éticos, atuamos com total transparência e respeito à legislação e aos nossos clientes.</p>
+        </div>
+        <div class="reveal d2 text-center p-8 border border-dourado-400/10 rounded-sm hover:border-dourado-400/30 transition-colors">
+          <div class="w-16 h-16 mx-auto mb-6 bg-dourado-400/10 rounded-full flex items-center justify-center">
+            <i class="fas fa-lightbulb text-dourado-400 text-2xl"></i>
+          </div>
+          <h4 class="font-display text-xl text-white mb-3">Inovação Jurídica</h4>
+          <p class="text-gray-400 text-sm leading-relaxed">Investimos continuamente em tecnologia e metodologias modernas para oferecer soluções mais ágeis e eficazes.</p>
+        </div>
+        <div class="reveal d3 text-center p-8 border border-dourado-400/10 rounded-sm hover:border-dourado-400/30 transition-colors">
+          <div class="w-16 h-16 mx-auto mb-6 bg-dourado-400/10 rounded-full flex items-center justify-center">
+            <i class="fas fa-handshake text-dourado-400 text-2xl"></i>
+          </div>
+          <h4 class="font-display text-xl text-white mb-3">Compromisso Total</h4>
+          <p class="text-gray-400 text-sm leading-relaxed">Cada cliente recebe atenção personalizada e estratégias sob medida, pois sabemos que cada caso é único e merece dedicação exclusiva.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     ÁREAS DE ATUAÇÃO
+═════════════════════════════════════════════════════ -->
+<section id="areas" class="bg-oliva-900/30 py-28">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16 reveal">
+      <span class="text-dourado-400 tracking-[.25em] uppercase text-xs font-bold mb-4 block">Especialidades</span>
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-4">Áreas de Atuação</h2>
+      <div class="divider w-40 mx-auto mb-6"></div>
+      <p class="text-gray-400 max-w-2xl mx-auto text-sm leading-relaxed">Oferecemos assessoria jurídica especializada em diversas áreas do direito, com equipes dedicadas e profunda expertise em cada segmento.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="area-card rounded-sm p-8 reveal card-hover">
+        <div class="area-icon"><i class="fas fa-building"></i></div>
+        <h3 class="font-display text-xl text-white mb-3">Direito Empresarial</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-5">Assessoria completa a empresas: contratos, fusões, aquisições, recuperação judicial, compliance e governança corporativa.</p>
+        <a href="#contato" class="text-dourado-400 text-sm font-bold uppercase tracking-wide hover:text-white transition-colors">Saiba mais <i class="fas fa-arrow-right ml-1 text-xs"></i></a>
+      </div>
+
+      <div class="area-card rounded-sm p-8 reveal d1 card-hover">
+        <div class="area-icon"><i class="fas fa-users"></i></div>
+        <h3 class="font-display text-xl text-white mb-3">Direito de Família</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-5">Divórcio consensual e litigioso, guarda, alimentos, inventário e planejamento patrimonial com suporte humanizado.</p>
+        <a href="#contato" class="text-dourado-400 text-sm font-bold uppercase tracking-wide hover:text-white transition-colors">Saiba mais <i class="fas fa-arrow-right ml-1 text-xs"></i></a>
+      </div>
+
+      <div class="area-card rounded-sm p-8 reveal d2 card-hover">
+        <div class="area-icon"><i class="fas fa-hard-hat"></i></div>
+        <h3 class="font-display text-xl text-white mb-3">Direito Trabalhista</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-5">Defesa de empregadores e empregados em ações trabalhistas, rescisões, acordos coletivos e conformidade trabalhista.</p>
+        <a href="#contato" class="text-dourado-400 text-sm font-bold uppercase tracking-wide hover:text-white transition-colors">Saiba mais <i class="fas fa-arrow-right ml-1 text-xs"></i></a>
+      </div>
+
+      <div class="area-card rounded-sm p-8 reveal card-hover">
+        <div class="area-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+        <h3 class="font-display text-xl text-white mb-3">Direito Tributário</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-5">Planejamento tributário, defesa em processos fiscais, recuperação de créditos e conformidade com a legislação vigente.</p>
+        <a href="#contato" class="text-dourado-400 text-sm font-bold uppercase tracking-wide hover:text-white transition-colors">Saiba mais <i class="fas fa-arrow-right ml-1 text-xs"></i></a>
+      </div>
+
+      <div class="area-card rounded-sm p-8 reveal d1 card-hover">
+        <div class="area-icon"><i class="fas fa-home"></i></div>
+        <h3 class="font-display text-xl text-white mb-3">Direito Imobiliário</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-5">Compra, venda, locações, regularização imobiliária, due diligence e resolução de conflitos envolvendo bens imóveis.</p>
+        <a href="#contato" class="text-dourado-400 text-sm font-bold uppercase tracking-wide hover:text-white transition-colors">Saiba mais <i class="fas fa-arrow-right ml-1 text-xs"></i></a>
+      </div>
+
+      <div class="area-card rounded-sm p-8 reveal d2 card-hover">
+        <div class="area-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3 class="font-display text-xl text-white mb-3">Direito Penal</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-5">Defesa criminal especializada, habeas corpus, crimes econômicos, compliance penal e assessoria preventiva para empresas.</p>
+        <a href="#contato" class="text-dourado-400 text-sm font-bold uppercase tracking-wide hover:text-white transition-colors">Saiba mais <i class="fas fa-arrow-right ml-1 text-xs"></i></a>
+      </div>
+
+      <div class="area-card rounded-sm p-8 reveal card-hover">
+        <div class="area-icon"><i class="fas fa-heartbeat"></i></div>
+        <h3 class="font-display text-xl text-white mb-3">Direito da Saúde</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-5">Ações contra planos de saúde, erro médico, responsabilidade civil hospitalar e regulação do setor de saúde suplementar.</p>
+        <a href="#contato" class="text-dourado-400 text-sm font-bold uppercase tracking-wide hover:text-white transition-colors">Saiba mais <i class="fas fa-arrow-right ml-1 text-xs"></i></a>
+      </div>
+
+      <div class="area-card rounded-sm p-8 reveal d1 card-hover">
+        <div class="area-icon"><i class="fas fa-laptop-code"></i></div>
+        <h3 class="font-display text-xl text-white mb-3">Direito Digital</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-5">LGPD, proteção de dados, crimes cibernéticos, contratos digitais e assessoria para startups e empresas de tecnologia.</p>
+        <a href="#contato" class="text-dourado-400 text-sm font-bold uppercase tracking-wide hover:text-white transition-colors">Saiba mais <i class="fas fa-arrow-right ml-1 text-xs"></i></a>
+      </div>
+
+      <div class="area-card rounded-sm p-8 reveal d2 card-hover">
+        <div class="area-icon"><i class="fas fa-globe-americas"></i></div>
+        <h3 class="font-display text-xl text-white mb-3">Direito Internacional</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-5">Contratos internacionais, arbitragem, investimentos estrangeiros e assessoria a empresas com operações no exterior.</p>
+        <a href="#contato" class="text-dourado-400 text-sm font-bold uppercase tracking-wide hover:text-white transition-colors">Saiba mais <i class="fas fa-arrow-right ml-1 text-xs"></i></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     SÓCIOS
+═════════════════════════════════════════════════════ -->
+<section id="socios" class="bg-black py-28 relative overflow-hidden">
+  <div class="absolute bottom-0 left-0 w-1/2 h-1/2 bg-oliva-900/10 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="container mx-auto px-6 relative z-10">
+
+    <div class="text-center mb-16 reveal">
+      <span class="text-dourado-400 tracking-[.25em] uppercase text-xs font-bold mb-4 block">Liderança</span>
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-4">Nossos Sócios</h2>
+      <div class="divider w-40 mx-auto mb-6"></div>
+      <p class="text-gray-400 max-w-2xl mx-auto text-sm leading-relaxed">Conheça as mentes por trás do escritório que transformou o direito brasileiro com décadas de dedicação.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+
+      <!-- Sócia 1 -->
+      <div class="partner-card rounded-sm overflow-hidden reveal card-hover">
+        <div class="relative h-72">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+               alt="Dra. Gisele França" class="w-full h-full object-cover object-top" />
+          <div class="img-overlay absolute inset-0"></div>
+          <div class="absolute bottom-4 left-4 flex gap-2">
+            <a href="#" aria-label="LinkedIn" class="w-8 h-8 bg-dourado-400/20 hover:bg-dourado-400 rounded-full flex items-center justify-center text-dourado-400 hover:text-black transition-all text-sm"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram" class="w-8 h-8 bg-dourado-400/20 hover:bg-dourado-400 rounded-full flex items-center justify-center text-dourado-400 hover:text-black transition-all text-sm"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="p-8">
+          <h3 class="font-display text-2xl text-white mb-1">Dra. Gisele França</h3>
+          <p class="text-dourado-400 text-xs font-bold uppercase tracking-wide mb-4">Sócia Fundadora · OAB/SP 123.456</p>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5">Doutora em Direito Empresarial pela USP, com especialização em Harvard Law School. Pioneira no Direito Digital brasileiro, com mais de 25 anos de atuação em grandes operações corporativas.</p>
+          <div class="space-y-2">
+            <div class="flex items-center gap-2 text-xs text-gray-500"><i class="fas fa-graduation-cap text-dourado-400 w-4"></i><span>Doutora em Direito — USP</span></div>
+            <div class="flex items-center gap-2 text-xs text-gray-500"><i class="fas fa-university text-dourado-400 w-4"></i><span>Especialização — Harvard Law School</span></div>
+            <div class="flex items-center gap-2 text-xs text-gray-500"><i class="fas fa-star text-dourado-400 w-4"></i><span>Top 50 Advogados Brasil — 2023</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sócio 2 -->
+      <div class="partner-card rounded-sm overflow-hidden reveal d2 card-hover">
+        <div class="relative h-72">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+               alt="Dr. Gabriel Miranda" class="w-full h-full object-cover object-top" />
+          <div class="img-overlay absolute inset-0"></div>
+          <div class="absolute bottom-4 left-4 flex gap-2">
+            <a href="#" aria-label="LinkedIn" class="w-8 h-8 bg-dourado-400/20 hover:bg-dourado-400 rounded-full flex items-center justify-center text-dourado-400 hover:text-black transition-all text-sm"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram" class="w-8 h-8 bg-dourado-400/20 hover:bg-dourado-400 rounded-full flex items-center justify-center text-dourado-400 hover:text-black transition-all text-sm"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="p-8">
+          <h3 class="font-display text-2xl text-white mb-1">Dr. Gabriel Miranda</h3>
+          <p class="text-dourado-400 text-xs font-bold uppercase tracking-wide mb-4">Sócio Fundador · OAB/SP 789.012</p>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5">Mestre em Direito Constitucional pela PUC-SP e especialista em Direito Tributário pela FGV. Reconhecido por sua atuação em casos de repercussão nacional no STF e STJ.</p>
+          <div class="space-y-2">
+            <div class="flex items-center gap-2 text-xs text-gray-500"><i class="fas fa-graduation-cap text-dourado-400 w-4"></i><span>Mestre em Direito — PUC-SP</span></div>
+            <div class="flex items-center gap-2 text-xs text-gray-500"><i class="fas fa-university text-dourado-400 w-4"></i><span>Especialização — FGV Direito</span></div>
+            <div class="flex items-center gap-2 text-xs text-gray-500"><i class="fas fa-star text-dourado-400 w-4"></i><span>Chambers Latin America — 2022/2023</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-14 text-center reveal">
+      <p class="text-gray-400 text-sm mb-6">Além dos sócios fundadores, contamos com uma equipe de <strong class="text-white">13 advogados especializados</strong> e profissionais de suporte.</p>
+      <a href="#contato" class="border border-dourado-400/50 text-dourado-400 px-8 py-3 rounded-sm text-sm font-bold uppercase tracking-wide hover:bg-dourado-400 hover:text-black transition-all inline-block">
+        Conheça a Equipe Completa
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     DEPOIMENTOS
+═════════════════════════════════════════════════════ -->
+<section class="bg-oliva-900/20 py-24">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-14 reveal">
+      <span class="text-dourado-400 tracking-[.25em] uppercase text-xs font-bold mb-4 block">Clientes</span>
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-4">O que dizem sobre nós</h2>
+      <div class="divider w-40 mx-auto"></div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="testimonial-card rounded-sm p-8 reveal">
+        <div class="flex gap-1 mb-4">
+          <i class="fas fa-star text-dourado-400 text-sm"></i><i class="fas fa-star text-dourado-400 text-sm"></i>
+          <i class="fas fa-star text-dourado-400 text-sm"></i><i class="fas fa-star text-dourado-400 text-sm"></i>
+          <i class="fas fa-star text-dourado-400 text-sm"></i>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed mb-6 italic">"A França &amp; Miranda superou todas as minhas expectativas. Profissionalismo impecável, comunicação clara e resultado acima do esperado no processo trabalhista."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-dourado-400 rounded-full flex items-center justify-center text-black font-bold text-sm flex-shrink-0">RS</div>
+          <div><p class="text-white text-sm font-bold">Ricardo Souza</p><p class="text-gray-500 text-xs">Diretor Comercial · São Paulo</p></div>
+        </div>
+      </div>
+
+      <div class="testimonial-card rounded-sm p-8 reveal d1">
+        <div class="flex gap-1 mb-4">
+          <i class="fas fa-star text-dourado-400 text-sm"></i><i class="fas fa-star text-dourado-400 text-sm"></i>
+          <i class="fas fa-star text-dourado-400 text-sm"></i><i class="fas fa-star text-dourado-400 text-sm"></i>
+          <i class="fas fa-star text-dourado-400 text-sm"></i>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed mb-6 italic">"Em um momento tão delicado como o divórcio, a equipe nos tratou com empatia e competência. A Dra. Gisele foi fundamental para chegarmos a um acordo justo."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-menta-500 rounded-full flex items-center justify-center text-black font-bold text-sm flex-shrink-0">AC</div>
+          <div><p class="text-white text-sm font-bold">Ana Carolina Lima</p><p class="text-gray-500 text-xs">Empresária · Campinas</p></div>
+        </div>
+      </div>
+
+      <div class="testimonial-card rounded-sm p-8 reveal d2">
+        <div class="flex gap-1 mb-4">
+          <i class="fas fa-star text-dourado-400 text-sm"></i><i class="fas fa-star text-dourado-400 text-sm"></i>
+          <i class="fas fa-star text-dourado-400 text-sm"></i><i class="fas fa-star text-dourado-400 text-sm"></i>
+          <i class="fas fa-star text-dourado-400 text-sm"></i>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed mb-6 italic">"Contratamos para a reestruturação tributária da empresa. O Dr. Gabriel e sua equipe entregaram um planejamento que reduziu nossa carga fiscal em 32%. Excepcional."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-oliva-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">MF</div>
+          <div><p class="text-white text-sm font-bold">Marcos Ferreira</p><p class="text-gray-500 text-xs">CEO · Grupo MF Engenharia</p></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     BLOG
+═════════════════════════════════════════════════════ -->
+<section id="blog" class="bg-black py-28">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-14 reveal">
+      <span class="text-dourado-400 tracking-[.25em] uppercase text-xs font-bold mb-4 block">Conhecimento</span>
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-4">Blog Jurídico</h2>
+      <div class="divider w-40 mx-auto mb-6"></div>
+      <p class="text-gray-400 max-w-2xl mx-auto text-sm leading-relaxed">Informação jurídica de qualidade para você tomar as melhores decisões. Artigos escritos pelos nossos especialistas.</p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="flex flex-wrap justify-center gap-6 mb-12 border-b border-gray-800 reveal">
+      <button class="tab-btn active pb-3 text-sm font-bold uppercase tracking-wide" data-tab="all">Todos</button>
+      <button class="tab-btn pb-3 text-sm font-bold uppercase tracking-wide text-gray-500 hover:text-dourado-400" data-tab="tributario">Tributário</button>
+      <button class="tab-btn pb-3 text-sm font-bold uppercase tracking-wide text-gray-500 hover:text-dourado-400" data-tab="familia">Família</button>
+      <button class="tab-btn pb-3 text-sm font-bold uppercase tracking-wide text-gray-500 hover:text-dourado-400" data-tab="digital">Digital</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <article class="blog-card rounded-sm reveal" data-cat="tributario">
+        <div class="overflow-hidden h-52">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+               alt="Reforma Tributária" class="blog-img w-full h-full object-cover" />
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-dourado-400/15 text-dourado-400 text-xs font-bold px-3 py-1 rounded-full uppercase">Tributário</span>
+            <span class="text-gray-500 text-xs">15 Jun 2025</span>
+          </div>
+          <h3 class="font-display text-lg text-white mb-3 leading-snug hover:text-dourado-400 cursor-pointer transition-colors">Reforma Tributária 2025: O que muda para sua empresa</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-5">Entenda os impactos da nova reforma tributária e como se preparar para as mudanças que entram em vigor em 2026.</p>
+          <div class="flex items-center justify-between pt-4 border-t border-gray-800">
+            <div class="flex items-center gap-2">
+              <div class="w-7 h-7 bg-dourado-400 rounded-full flex items-center justify-center text-black text-xs font-bold">GM</div>
+              <span class="text-gray-500 text-xs">Dr. Gabriel Miranda</span>
+            </div>
+            <a href="#" class="text-dourado-400 text-xs font-bold hover:text-white transition-colors">Ler <i class="fas fa-arrow-right ml-1"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card rounded-sm reveal d1" data-cat="familia">
+        <div class="overflow-hidden h-52">
+          <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+               alt="Guarda de filhos" class="blog-img w-full h-full object-cover" />
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-menta-500/15 text-menta-500 text-xs font-bold px-3 py-1 rounded-full uppercase">Família</span>
+            <span class="text-gray-500 text-xs">02 Jun 2025</span>
+          </div>
+          <h3 class="font-display text-lg text-white mb-3 leading-snug hover:text-dourado-400 cursor-pointer transition-colors">Guarda compartilhada: direitos e responsabilidades</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-5">Como funciona a guarda compartilhada na prática e como garantir o bem-estar dos filhos com um acordo justo.</p>
+          <div class="flex items-center justify-between pt-4 border-t border-gray-800">
+            <div class="flex items-center gap-2">
+              <div class="w-7 h-7 bg-menta-500 rounded-full flex items-center justify-center text-black text-xs font-bold">GF</div>
+              <span class="text-gray-500 text-xs">Dra. Gisele França</span>
+            </div>
+            <a href="#" class="text-dourado-400 text-xs font-bold hover:text-white transition-colors">Ler <i class="fas fa-arrow-right ml-1"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card rounded-sm reveal d2" data-cat="digital">
+        <div class="overflow-hidden h-52">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+               alt="LGPD" class="blog-img w-full h-full object-cover" />
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-dourado-400/15 text-dourado-400 text-xs font-bold px-3 py-1 rounded-full uppercase">Digital</span>
+            <span class="text-gray-500 text-xs">20 Mai 2025</span>
+          </div>
+          <h3 class="font-display text-lg text-white mb-3 leading-snug hover:text-dourado-400 cursor-pointer transition-colors">LGPD 2025: novas penalidades e como se adequar</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-5">A ANPD intensificou as fiscalizações. Saiba o que fazer para proteger sua empresa de autuações e multas.</p>
+          <div class="flex items-center justify-between pt-4 border-t border-gray-800">
+            <div class="flex items-center gap-2">
+              <div class="w-7 h-7 bg-dourado-400 rounded-full flex items-center justify-center text-black text-xs font-bold">GF</div>
+              <span class="text-gray-500 text-xs">Dra. Gisele França</span>
+            </div>
+            <a href="#" class="text-dourado-400 text-xs font-bold hover:text-white transition-colors">Ler <i class="fas fa-arrow-right ml-1"></i></a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="text-center mt-12 reveal">
+      <a href="#" class="border border-dourado-400/40 text-dourado-400 px-8 py-3.5 rounded-sm text-sm font-bold uppercase tracking-wide hover:bg-dourado-400 hover:text-black transition-all inline-block">
+        Ver todos os artigos <i class="fas fa-arrow-right ml-2"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     CTA BANNER
+═════════════════════════════════════════════════════ -->
+<section class="relative py-24 overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-oliva-900 via-oliva-800 to-black"></div>
+  <div class="absolute inset-0 opacity-10"
+       style="background-image:url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');background-size:cover;background-position:center;"></div>
+  <div class="container mx-auto px-6 relative z-10 text-center">
+    <div class="reveal max-w-3xl mx-auto">
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+        Pronto para defender <span class="gold-gradient">seus direitos</span>?
+      </h2>
+      <p class="text-gray-300 text-lg mb-10 leading-relaxed">
+        Agende uma consulta gratuita de 30 minutos e descubra como podemos ajudar no seu caso. Atendimento presencial e online.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contato" class="btn-gold text-black px-10 py-4 rounded-sm font-bold tracking-wide uppercase text-sm">
+          <i class="fas fa-calendar-check mr-2"></i>Consulta Gratuita
+        </a>
+        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener"
+           class="border-2 border-menta-500 text-menta-500 px-10 py-4 rounded-sm font-bold tracking-wide uppercase text-sm hover:bg-menta-500 hover:text-black transition-all">
+          <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     CONTATO
+═════════════════════════════════════════════════════ -->
+<section id="contato" class="bg-black py-28">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16 reveal">
+      <span class="text-dourado-400 tracking-[.25em] uppercase text-xs font-bold mb-4 block">Fale Conosco</span>
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-4">Entre em Contato</h2>
+      <div class="divider w-40 mx-auto mb-6"></div>
+      <p class="text-gray-400 max-w-xl mx-auto text-sm">Estamos prontos para ouvir você. Preencha o formulário ou utilize um de nossos canais de atendimento.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-5 gap-12 max-w-6xl mx-auto">
+
+      <!-- Info -->
+      <div class="lg:col-span-2 reveal">
+        <div class="space-y-8">
+          <div class="flex items-start gap-5">
+            <div class="w-12 h-12 bg-dourado-400/10 rounded-sm flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-map-marker-alt text-dourado-400 text-lg"></i>
+            </div>
+            <div>
+              <h4 class="text-white font-bold mb-1">Endereço</h4>
+              <p class="text-gray-400 text-sm leading-relaxed">Av. Paulista, 1811 — 12º andar<br>Bela Vista — São Paulo/SP<br>CEP 01311-200</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-5">
+            <div class="w-12 h-12 bg-dourado-400/10 rounded-sm flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-phone-alt text-dourado-400 text-lg"></i>
+            </div>
+            <div>
+              <h4 class="text-white font-bold mb-1">Telefone</h4>
+              <p class="text-gray-400 text-sm">(11) 3456-7890</p>
+              <p class="text-gray-400 text-sm">(11) 99999-8888 <span class="text-menta-500 text-xs">(WhatsApp)</span></p>
+            </div>
+          </div>
+          <div class="flex items-start gap-5">
+            <div class="w-12 h-12 bg-dourado-400/10 rounded-sm flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-envelope text-dourado-400 text-lg"></i>
+            </div>
+            <div>
+              <h4 class="text-white font-bold mb-1">E-mail</h4>
+              <p class="text-gray-400 text-sm">contato@francamiranda.adv.br</p>
+              <p class="text-gray-400 text-sm">consulta@francamiranda.adv.br</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-5">
+            <div class="w-12 h-12 bg-dourado-400/10 rounded-sm flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-clock text-dourado-400 text-lg"></i>
+            </div>
+            <div>
+              <h4 class="text-white font-bold mb-1">Atendimento</h4>
+              <p class="text-gray-400 text-sm">Seg–Sex: 08h às 19h</p>
+              <p class="text-gray-400 text-sm">Sáb: 09h às 13h</p>
+              <p class="text-menta-500 text-xs mt-1">Plantão emergencial 24/7</p>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-4 text-sm">Redes Sociais</h4>
+            <div class="flex gap-3">
+              <a href="#" aria-label="LinkedIn"  class="w-10 h-10 border border-dourado-400/30 hover:border-dourado-400 hover:bg-dourado-400 rounded-sm flex items-center justify-center text-dourado-400 hover:text-black transition-all"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram" class="w-10 h-10 border border-dourado-400/30 hover:border-dourado-400 hover:bg-dourado-400 rounded-sm flex items-center justify-center text-dourado-400 hover:text-black transition-all"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Facebook"  class="w-10 h-10 border border-dourado-400/30 hover:border-dourado-400 hover:bg-dourado-400 rounded-sm flex items-center justify-center text-dourado-400 hover:text-black transition-all"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="YouTube"   class="w-10 h-10 border border-dourado-400/30 hover:border-dourado-400 hover:bg-dourado-400 rounded-sm flex items-center justify-center text-dourado-400 hover:text-black transition-all"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulário -->
+      <div class="lg:col-span-3 reveal d2">
+        <form id="contact-form" class="bg-oliva-900/20 border border-dourado-400/10 rounded-sm p-8 md:p-10" novalidate>
+          <h3 class="font-display text-2xl text-white mb-7">Solicite uma Consulta</h3>
+
+          <div class="grid md:grid-cols-2 gap-5 mb-5">
+            <div>
+              <label class="block text-gray-400 text-xs uppercase tracking-wider mb-2">Nome Completo *</label>
+              <input type="text" class="fm-input" placeholder="Seu nome completo" required />
+            </div>
+            <div>
+              <label class="block text-gray-400 text-xs uppercase tracking-wider mb-2">E-mail *</label>
+              <input type="email" class="fm-input" placeholder="seu@email.com" required />
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-5 mb-5">
+            <div>
+              <label class="block text-gray-400 text-xs uppercase tracking-wider mb-2">Telefone *</label>
+              <input type="tel" class="fm-input tel-mask" placeholder="(11) 99999-9999" required />
+            </div>
+            <div>
+              <label class="block text-gray-400 text-xs uppercase tracking-wider mb-2">Área de Interesse *</label>
+              <select class="fm-input" required>
+                <option value="">Selecione uma área</option>
+                <option>Direito Empresarial</option>
+                <option>Direito de Família</option>
+                <option>Direito Trabalhista</option>
+                <option>Direito Tributário</option>
+                <option>Direito Imobiliário</option>
+                <option>Direito Penal</option>
+                <option>Direito da Saúde</option>
+                <option>Direito Digital</option>
+                <option>Direito Internacional</option>
+                <option>Outro</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mb-5">
+            <label class="block text-gray-400 text-xs uppercase tracking-wider mb-2">Assunto *</label>
+            <input type="text" class="fm-input" placeholder="Descreva brevemente o assunto" required />
+          </div>
+
+          <div class="mb-7">
+            <label class="block text-gray-400 text-xs uppercase tracking-wider mb-2">Mensagem *</label>
+            <textarea class="fm-input resize-none" rows="5" placeholder="Descreva sua situação em detalhes. Todas as informações são tratadas com total sigilo." required></textarea>
+          </div>
+
+          <div class="flex items-start gap-3 mb-7">
+            <input type="checkbox" id="privacy-check" class="mt-1 accent-yellow-500 cursor-pointer flex-shrink-0" required />
+            <label for="privacy-check" class="text-gray-400 text-xs leading-relaxed cursor-pointer">
+              Li e concordo com a <a href="#" class="text-dourado-400 underline hover:text-white">Política de Privacidade</a> e autorizo o uso das informações para retorno de contato, em conformidade com a LGPD.
+            </label>
+          </div>
+
+          <button type="submit" class="btn-gold w-full text-black py-4 rounded-sm font-bold tracking-wide uppercase text-sm">
+            <i class="fas fa-paper-plane mr-2"></i>Enviar Mensagem
+          </button>
+
+          <div id="form-success" class="hidden mt-5 bg-menta-500/10 border border-menta-500/30 rounded-sm p-4 text-center">
+            <i class="fas fa-check-circle text-menta-500 text-2xl mb-2 block"></i>
+            <p class="text-menta-400 text-sm font-bold">Mensagem enviada com sucesso!</p>
+            <p class="text-gray-400 text-xs mt-1">Retornaremos em até 24 horas úteis.</p>
+          </div>
+
+          <div id="form-error" class="hidden mt-5 bg-red-500/10 border border-red-500/30 rounded-sm p-4 text-center">
+            <i class="fas fa-exclamation-circle text-red-400 text-2xl mb-2 block"></i>
+            <p class="text-red-400 text-sm font-bold">Por favor, preencha todos os campos obrigatórios.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════
+     MAPA
+═════════════════════════════════════════════════════ -->
+<div class="w-full h-72 relative overflow-hidden border-y border-oliva-800/40">
+  <iframe
+    title="Localização França &amp; Miranda"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0989437609!2d-46.65394!3d-23.5646162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.+Paulista%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt!2sbr!4v1620000000000!5m2!1spt!2sbr"
+    class="w-full h-full filter grayscale opacity-50"
+    style="border:0;" allowfullscreen loading="lazy">
+  </iframe>
+  <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+    <div class="bg-black/80 border border-dourado-400/40 rounded-sm px-6 py-3"
+         style="-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);">
+      <div class="flex items-center gap-3">
+        <i class="fas fa-map-marker-alt text-dourado-400"></i>
+        <span class="text-white text-sm font-bold">Av. Paulista, 1811 — 12º andar · São Paulo/SP</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════
+     FOOTER
+═════════════════════════════════════════════════════ -->
+<footer class="bg-black border-t border-oliva-800/50 pt-16 pb-8">
+  <div class="container mx-auto px-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+
+      <!-- Brand -->
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-14 h-14 border-2 border-dourado-400 rounded-full flex items-center justify-center">
+            <span class="font-display text-dourado-400 text-xl font-bold">F&amp;M</span>
+          </div>
+          <div>
+            <p class="font-display text-dourado-400 text-lg font-bold tracking-widest">FRANÇA &amp; MIRANDA</p>
+            <p class="text-xs text-gray-500 tracking-widest uppercase">Advogados Associados</p>
+          </div>
+        </div>
+        <p class="text-gray-500 text-sm leading-relaxed mb-6 max-w-sm">
+          Excelência jurídica desde 1998. Comprometidos com a defesa dos seus direitos com ética, dedicação e resultados comprovados.
+        </p>
+        <div class="flex gap-3">
+          <a href="#" aria-label="LinkedIn"  class="w-9 h-9 border border-gray-700 hover:border-dourado-400 rounded-sm flex items-center justify-center text-gray-500 hover:text-dourado-400 transition-all text-sm"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram" class="w-9 h-9 border border-gray-700 hover:border-dourado-400 rounded-sm flex items-center justify-center text-gray-500 hover:text-dourado-400 transition-all text-sm"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"  class="w-9 h-9 border border-gray-700 hover:border-dourado-400 rounded-sm flex items-center justify-center text-gray-500 hover:text-dourado-400 transition-all text-sm"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"   class="w-9 h-9 border border-gray-700 hover:border-dourado-400 rounded-sm flex items-center justify-center text-gray-500 hover:text-dourado-400 transition-all text-sm"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Navegação -->
+      <div>
+        <h4 class="font-display text-white text-xs font-bold uppercase tracking-widest mb-6">Navegação</h4>
+        <ul class="space-y-3">
+          <li><a href="#home"    class="text-gray-500 hover:text-dourado-400 text-sm transition-colors">Home</a></li>
+          <li><a href="#sobre"   class="text-gray-500 hover:text-dourado-400 text-sm transition-colors">Sobre o Escritório</a></li>
+          <li><a href="#areas"   class="text-gray-500 hover:text-dourado-400 text-sm transition-colors">Áreas de Atuação</a></li>
+          <li><a href="#socios"  class="text-gray-500 hover:text-dourado-400 text-sm transition-colors">Nossos Sócios</a></li>
+          <li><a href="#blog"    class="text-gray-500 hover:text-dourado-400 text-sm transition-colors">Blog Jurídico</a></li>
+          <li><a href="#contato" class="text-gray-500 hover:text-dourado-400 text-sm transition-colors">Contato</a></li>
+        </ul>
+      </div>
+
+      <!-- Especialidades -->
+      <div>
+        <h4 class="font-display text-white text-xs font-bold uppercase tracking-widest mb-6">Especialidades</h4>
+        <ul class="space-y-3">
+          <li><a href="#areas" class="text-gray-500 hover:text-dourado-400 text-sm transition-colors">Direito Empresarial</a></li>
+          <li><a href="#areas" class="text-gray-500 hover:text-dourado-400 text-sm transition-colors">Direito de Família</a></li>
+          <li><a href="#areas" class="text-gray-500 hover:text-dourado-400 text-sm transition-colors">Direito Trabalhista</a></li>
+          <li><a href="#areas" class="text-gray-500 hover:text-dourado-400 text-sm transition-colors">Direito Tributário</a></li>
+          <li><a href="#areas" class="text-gray-500 hover:text-dourado-400 text-sm transition-colors">Direito Digital</a></li>
+          <li><a href="#areas" class="text-gray-500 hover:text-dourado-400 text-sm transition-colors">Direito Internacional</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="divider mb-8 opacity-20"></div>
+
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600">
+      <p class="text-center md:text-left">
+        © 2025 França &amp; Miranda Advogados Associados. Todos os direitos reservados.<br class="md:hidden" />
+        OAB/SP nº 123.456 — CNPJ 12.345.678/0001-90
+      </p>
+      <div class="flex gap-5">
+        <a href="#" class="hover:text-dourado-400 transition-colors">Política de Privacidade</a>
+        <a href="#" class="hover:text-dourado-400 transition-colors">Termos de Uso</a>
+        <a href="#" class="hover:text-dourado-400 transition-colors">Cookies</a>
+      </div>
+    </div>
+
+    <p class="text-center text-gray-700 text-xs mt-6 leading-relaxed max-w-3xl mx-auto">
+      A comunicação através deste site não cria relação advogado-cliente. As informações apresentadas têm caráter informativo e não constituem consultoria jurídica.
+    </p>
+  </div>
+</footer>
+
+<!-- ════════════════════════════════════════════════════
+     FLUTUANTES
+═════════════════════════════════════════════════════ -->
+<!-- Scroll to top -->
+<button id="scroll-top"
+        class="fixed bottom-24 right-6 z-50 w-11 h-11 bg-dourado-400 text-black rounded-sm flex items-center justify-center shadow-lg hover:bg-dourado-300 transition-all"
+        aria-label="Voltar ao topo"
+        onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fas fa-chevron-up text-sm"></i>
+</button>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/5511999998888?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta."
+   target="_blank" rel="noopener noreferrer"
+   class="wa-btn" aria-label="Fale pelo WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ════════════════════════════════════════════════════
+     SCRIPTS
+═════════════════════════════════════════════════════ -->
+<script>
+(function () {
+  'use strict';
+
+  /* ── 1. Navbar scroll ─────────────────────────────── */
+  const navbar = document.getElementById('navbar');
+  const scrollTop = document.getElementById('scroll-top');
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 60) {
+      navbar.classList.add('scrolled');
+      scrollTop.classList.add('show');
+    } else {
+      navbar.classList.remove('scrolled');
+      scrollTop.classList.remove('show');
+    }
+  }, { passive: true });
+
+  /* ── 2. Mobile drawer ─────────────────────────────── */
+  const hamburger    = document.getElementById('hamburger');
+  const drawer       = document.getElementById('mobile-drawer');
+  const closeDrawer  = document.getElementById('close-drawer');
+  const overlay      = document.getElementById('mobile-overlay');
+
+  function openDrawer() {
+    drawer.classList.add('open');
+    overlay.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    drawer.classList.remove('open');
+    overlay.classList.remove('show');
+    document.body.style.overflow = '';
+  }
+
+  hamburger.addEventListener('click', openDrawer);
+  closeDrawer.addEventListener('click', closeMenu);
+  overlay.addEventListener('click', closeMenu);
+  document.querySelectorAll('.drawer-link').forEach(function (link) {
+    link.addEventListener('click', closeMenu);
+  });
+
+  /* ── 3. Reveal on scroll ──────────────────────────── */
+  var revealObs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        revealObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(function (el) {
+    revealObs.observe(el);
+  });
+
+  /* ── 4. Counter animation ─────────────────────────── */
+  var counterObs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var el      = e.target;
+      var target  = parseInt(el.dataset.target, 10);
+      var suffix  = el.dataset.suffix !== undefined ? el.dataset.suffix : '+';
+      var dur     = 1800;
+      var step    = target / (dur / 16);
+      var current = 0;
+      var iv = setInterval(function () {
+        current += step;
+        if (current >= target) {
+          current = target;
+          clearInterval(iv);
+        }
+        el.textContent = Math.floor(current).toLocaleString('pt-BR') + suffix;
+      }, 16);
+      counterObs.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.counter').forEach(function (c) {
+    counterObs.observe(c);
+  });
+
+  /* ── 5. Progress bars ─────────────────────────────── */
+  var progObs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        var fill = e.target;
+        var w    = fill.dataset.w;
+        setTimeout(function () { fill.style.width = w + '%'; }, 200);
+        progObs.unobserve(fill);
+      }
+    });
+  }, { threshold: 0.4 });
+
+  document.querySelectorAll('.prog-fill').forEach(function (el) {
+    progObs.observe(el);
+  });
+
+  /* ── 6. Active nav link on scroll ─────────────────── */
+  var sections  = document.querySelectorAll('section[id]');
+  var navLinks  = document.querySelectorAll('.nav-link');
+
+  var sectionObs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        navLinks.forEach(function (link) {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + e.target.id) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }, { threshold: 0.4 });
+
+  sections.forEach(function (s) { sectionObs.observe(s); });
+
+  /* ── 7. Blog tabs ─────────────────────────────────── */
+  document.querySelectorAll('.tab-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.tab-btn').forEach(function (b) {
+        b.classList.remove('active');
+        b.classList.add('text-gray-500');
+      });
+      btn.classList.add('active');
+      btn.classList.remove('text-gray-500');
+
+      var tab = btn.dataset.tab;
+      document.querySelectorAll('article[data-cat]').forEach(function (art) {
+        art.style.display = (tab === 'all' || art.dataset.cat === tab) ? '' : 'none';
+      });
+    });
+  });
+
+  /* ── 8. Telefone mask ─────────────────────────────── */
+  document.querySelectorAll('.tel-mask').forEach(function (input) {
+    input.addEventListener('input', function () {
+      var v = this.value.replace(/\D/g, '').slice(0, 11);
+      if (v.length <= 10) {
+        v = v.replace(/(\d{2})(\d{4})(\d{0,4})/, function (_, a, b, c) {
+          return c ? '(' + a + ') ' + b + '-' + c : b ? '(' + a + ') ' + b : '(' + a;
+        });
+      } else {
+        v = v.replace(/(\d{2})(\d{5})(\d{0,4})/, function (_, a, b, c) {
+          return c ? '(' + a + ') ' + b + '-' + c : '(' + a + ') ' + b;
+        });
+      }
+      this.value = v;
+    });
+  });
+
+  /* ── 9. Formulário ────────────────────────────────── */
+  var form = document.getElementById('contact-form');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Validação básica
+    var requiredFields = form.querySelectorAll('[required]');
+    var valid = true;
+    requiredFields.forEach(function (field) {
+      if (!field.value.trim() || (field.type === 'checkbox' && !field.checked)) {
+        valid = false;
+        field.style.borderColor = 'rgba(239,68,68,.7)';
+        field.addEventListener('input', function () {
+          field.style.borderColor = '';
+        }, { once: true });
+        field.addEventListener('change', function () {
+          field.style.borderColor = '';
+        }, { once: true });
+      }
+    });
+
+    var errorEl   = document.getElementById('form-error');
+    var successEl = document.getElementById('form-success');
+
+    if (!valid) {
+      errorEl.classList.remove('hidden');
+      setTimeout(function () { errorEl.classList.add('hidden'); }, 4000);
+      return;
+    }
+
+    errorEl.classList.add('hidden');
+
+    var btn = form.querySelector('button[type=submit]');
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Enviando...';
+    btn.disabled = true;
+
+    // Simulação de envio (substituir por fetch real)
+    setTimeout(function () {
+      successEl.classList.remove('hidden');
+      form.reset();
+      btn.innerHTML = '<i class="fas fa-paper-plane mr-2"></i>Enviar Mensagem';
+      btn.disabled = false;
+      setTimeout(function () { successEl.classList.add('hidden'); }, 6000);
+    }, 1600);
+  });
+
+})();
+</script>
+</body>
+</html>
